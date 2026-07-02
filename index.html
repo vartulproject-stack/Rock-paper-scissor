@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 23/100 - RPS Game | Vartul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✊✋✌️ Rock Paper Scissors</h1>
+        <p class="day">Day 23/100 - Dubai 23% 🇦🇪</p>
+
+        <div class="score-board">
+            <div class="score">
+                <p>Tu 👑</p>
+                <span id="playerScore">0</span>
+            </div>
+            <div class="score">
+                <p>Computer 🤖</p>
+                <span id="computerScore">0</span>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button class="choice" onclick="play('rock')">✊</button>
+            <button class="choice" onclick="play('paper')">✋</button>
+            <button class="choice" onclick="play('scissors')">✌️</button>
+        </div>
+
+        <div class="result-area">
+            <div class="battle">
+                <div>
+                    <p>Tu</p>
+                    <div class="pick" id="playerPick">❓</div>
+                </div>
+                <div class="vs">VS</div>
+                <div>
+                    <p>Computer</p>
+                    <div class="pick" id="computerPick">❓</div>
+                </div>
+            </div>
+
+            <h2 id="result">Choose kar bhai!</h2>
+        </div>
+
+        <button class="reset-btn" onclick="resetGame()">Reset Score</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
